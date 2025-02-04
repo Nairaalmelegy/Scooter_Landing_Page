@@ -21,10 +21,10 @@ const Navbar = () => {
     };
   }, []);
   return (
-    <nav className="shadow-xs border-b border-gray-200 pr-3 pl-3">
-      <div className="container mx-auto flex justify-between items-center py-4">
+    <nav className="shadow-xs border-b border-gray-200 px-10">
+      <div className="flex justify-between items-center py-4">
         <a className="flex items-center" href="#">
-          <img src={logo} alt="Logo" className="h-12 pl-5" /> 
+          <img src={logo} alt="Logo" className="h-12 pl-0" /> 
         </a>
         <button className="text-dark lg:hidden" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
@@ -51,9 +51,9 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        <div className="flex space-x-4 ">
+        <div className="flex space-x-4">
           <button className="btn btn-outline-primary  pl-4 pr-4 pt-2 pb-2 rounded-md hover:cursor-pointer hover:border-b hover:border-gray-400" type="button">Log In</button>
-          <button className="btn bg-gray-700 text-white pl-4 pr-4 pt-2 pb-2 rounded-md hover:cursor-pointer hover:rounded-xl" type="button">Sign Up</button>
+          <button className="btn text-white pl-4 pr-4 pt-2 pb-2 rounded-md hover:cursor-pointer hover:rounded-xl" type="button" style={{backgroundColor: '#42454A'}}>Sign Up</button>
         </div>
       </div>
     </nav>

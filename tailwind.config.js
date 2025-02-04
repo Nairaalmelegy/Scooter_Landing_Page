@@ -4,8 +4,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      
       colors: {
-        primary: 'rgb(66, 69, 74)',
+        'primary': 'rgb(66, 69, 74)',
+        'custom-gray': '#42454A',
         
         
       },

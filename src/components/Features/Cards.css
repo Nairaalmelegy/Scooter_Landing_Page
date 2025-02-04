@@ -1,0 +1,13 @@
+.image-counter span {
+    font-size: 7rem;
+    font-weight: bold;
+    color: white;
+    -webkit-text-stroke: 0.2px rgb(65, 65, 65);
+    text-shadow: 1px 1px 0 rgb(65, 65, 65), -2px -2px 0 rgb(65, 65, 65), -2px 2px 0 rgb(65, 65, 65), 2px -2px 0 rgb(65, 65, 65);
+}
+/* Outline text for the counter */
+.outline-text {
+    color: transparent;
+    -webkit-text-stroke: 0.001px #484848;
+}
+

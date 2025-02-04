@@ -1,0 +1,71 @@
+h1, .hero-line, .hero-description, h5{
+    color: #42454A;
+    
+}
+
+@keyframes slideIn {
+    0% {
+      transform: translateX(100%);
+
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  .animate-slide-in {
+    animation: slideIn 1s ease-out forwards;
+  }
+
+/* FadeIn animation */
+@keyframes fadeIn {
+0% {
+    opacity: 0;
+}
+100% {
+    opacity: 1;
+}
+}
+
+.animate-fade-in {
+animation: fadeIn 1.5s ease-out forwards;
+}
+
+@keyframes bounceLR {
+0%, 100% {
+    transform: translateX(0);
+}
+50% {
+    transform: translateX(5px); /* Adjust this for more bounce */
+}
+}
+.animate-bounce-lr {
+    animation: bounceLR 3s infinite;
+}
+
+@keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 62%;
+    }
+  }
+  
+  .typing-effect {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+
+    animation: typing 1s steps(15, end) forwards;
+  }
+  
+  .typing-delay {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+    animation: typing 1s steps(12, end) 1.2s forwards;
+  }
+  
+  
