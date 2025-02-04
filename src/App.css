@@ -12,3 +12,64 @@
 }
 
 
+/* Define the fly-in animation */
+@keyframes flyIn {
+  from {
+    transform: translateX(-100%); /* Start from left off-screen */
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0); /* End at its normal position */
+    opacity: 1;
+  }
+}
+
+/* Apply the fly-in animation to an element */
+.fly-in {
+  animation: flyIn 1s ease-out;
+}
+
+/* Define the fly-in and rotate animation */
+@keyframes flyInRotate {
+  from {
+    transform: translateX(100%) rotate(-50deg); /* Start from right off-screen and rotate upwards */
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0) rotate(0); /* End at its normal position and no rotation */
+    opacity: 1;
+  }
+}
+
+/* Apply the fly-in and rotate animation to an element */
+.fly-in-rotate {
+  animation: flyInRotate 1s ease-out;
+}
+
+/* FadeIn animation */
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+  }
+  
+  .animate-fade-in {
+  animation: fadeIn 1.5s ease-out forwards;
+  }
+
+/* Add these to your existing CSS */
+.fly-in, .fly-in-rotate,  .animate-fade-in {
+  opacity: 0;
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fly-in.visible, .fly-in-rotate.visible,  .animate-fade-in.visible {
+  opacity: 1;
+  transform: translateX(0) rotate(0); /* Adjust based on animation */
+}
+
+
+

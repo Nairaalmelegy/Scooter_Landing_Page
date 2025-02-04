@@ -2,6 +2,7 @@ import './App.css';
 import Cards  from './components/Features/Cards';
 import Hero from './components/Hero/Hero';
 import Navbar from './components/Navbar/Navbar';
+import Products from './components/Product_info/Products';
 
 
 
@@ -13,6 +14,8 @@ function App() {
       </header>
       <Hero/>
       <Cards/>
+      <Products/>
+      
     </section>
   );
 }
