@@ -53,7 +53,7 @@ const Products = () => {
       <h1 className="text-4xl font-bold text-center pt-20 animate-fade-in">Product Information</h1>
       <p className="text-center text-md pt-10 animate-fade-in">Our Scooter has following unique design and technology features:</p>
       
-      <section className="products grid grid-cols-2 gap-30 items-center justify-between overflow-hidden pt-20">
+      <section className="products grid grid-cols-2 gap-30 items-center justify-between overflow-hidden pt-5">
         <div className="image fly-in">
           <img src={productimage} alt="Product" />
         </div>
